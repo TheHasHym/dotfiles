@@ -192,7 +192,8 @@ alt-shift-comma = 'mode service'
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+a = ['layout accordion', 'mode main'] # Switch to accordion layout
+t = ['layout tiling', 'mode main'] # Switch to tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
 # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
