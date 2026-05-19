@@ -114,6 +114,10 @@ return {
 							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
 						end, "[T]oggle Inlay [H]ints")
 					end
+
+					map("<leader>e", vim.diagnostic.open_float, "Show [E]rror float")
+					map("<leader>q", vim.diagnostic.setloclist, "Open diagnostic [Q]uickfix")
+					map("<leader>fd", require("telescope.builtin").diagnostics, "[F]ind [D]iagnostics")
 				end,
 			})
 
