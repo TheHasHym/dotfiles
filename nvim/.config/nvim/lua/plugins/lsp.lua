@@ -168,6 +168,8 @@ return {
 				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
 				-- ts_ls = {},
+				html = { filetypes = { "html", "htmldjango" } },
+				cssls = {},
 				ansiblels = {},
 				lua_ls = {
 					-- cmd = { ... },
@@ -202,6 +204,8 @@ return {
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
 				"ruff",
+				"prettier",
+				"djlint",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
