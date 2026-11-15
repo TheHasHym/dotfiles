@@ -1,6 +1,13 @@
 # Place a copy of this config to ~/.aerospace.toml
 # After that, you can edit ~/.aerospace.toml to your liking
 
+# Config version for compatibility and deprecations
+# See: https://nikitabobko.github.io/AeroSpace/guide#config-version
+config-version = 2
+
+# Workspaces that stay alive even when they contain no windows.
+persistent-workspaces = ["B", "D", "M", "N", "P", "R", "S", "T"]
+
 # You can use it to add commands that run after login to macOS user session.
 # 'start-at-login' needs to be 'true' for 'after-login-command' to work
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
@@ -95,7 +102,7 @@ outer.right =      10
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 # alt-slash = 'layout accordion horizontal vertical'
-alt-comma = 'layout tiles horizontal vertical'
+alt-comma = 'layout floating tiling'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 alt-h = 'focus left'
